@@ -1,7 +1,5 @@
 package Lab1.Homework;
 
-import java.sql.Time;
-
 public class Main {
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
