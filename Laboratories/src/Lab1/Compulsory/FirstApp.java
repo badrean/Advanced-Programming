@@ -1,4 +1,4 @@
-package Lab1.Compulsory;
+package lab1.compulsory;
 
 public class FirstApp {
     public static String[] languages = new String[] {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
@@ -9,7 +9,8 @@ public class FirstApp {
 //        add the binary number 10101 to the result;
 //        add the hexadecimal number FF to the result;
 //        multiply the result by 6;
-//        Compute the sum of the digits in the result obtained in the previous step. This is the new result. While the new result has more than one digit, continue to sum the digits of the result.
+//        Compute the sum of the digits in the result obtained in the previous step. This is the new result.
+//        While the new result has more than one digit, continue to sum the digits of the result.
 //        Display on the screen the message: "Willy-nilly, this semester I will learn " + languages[result].
         System.out.println("Initial n value  " + n);
         n = n * 3;
