@@ -1,7 +1,4 @@
 package lab1.homework;
-
-import org.jetbrains.annotations.NotNull;
-
 /**
  * Main is the starting point for JVM to start execution of the Java program.
  * It creates the LatinSquare object with the number given by the user and calls
@@ -28,7 +25,7 @@ public class Main {
      * @see             LatinSquare
      * @since           1.0
      */
-    public static void main(String @NotNull [] args) {
+    public static void main(String [] args) {
         long start = System.currentTimeMillis();
         int n = 0;
         try {
