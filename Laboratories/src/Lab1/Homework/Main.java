@@ -1,4 +1,5 @@
 package lab1.homework;
+
 /**
  * Main is the starting point for JVM to start execution of the Java program.
  * It creates the LatinSquare object with the number given by the user and calls
@@ -20,12 +21,12 @@ public class Main {
      * The method checks if the parameter given is a number and if it's > 0. If the argument
      * doesn't meet these requirements, the program stops and prints a message to the user.
      *
-     * @param args      a natural number > 0 which represents the upper
-     *                  limit of the latin square
-     * @see             LatinSquare
-     * @since           1.0
+     * @param args a natural number > 0 which represents the upper
+     *             limit of the latin square
+     * @see LatinSquare
+     * @since 1.0
      */
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         long start = System.currentTimeMillis();
         int n = 0;
         try {
@@ -45,7 +46,7 @@ public class Main {
         long end = System.currentTimeMillis();
 
         if (n > 30000) {
-            System.out.println(end-start + " ms");
+            System.out.println(end - start + " ms");
         } else {
             patrat.printLatinSquare();
         }

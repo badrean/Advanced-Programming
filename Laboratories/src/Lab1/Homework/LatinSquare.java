@@ -14,7 +14,7 @@ public class LatinSquare
     private int[][] matrix;
 
     /**
-     * Class constructor
+     * Class constructor <br>
      * Stores the dimension of the matrix and initializes the matrix.
      * Calls createLatinSquare() to create a latin square from 1 to n.
      *
