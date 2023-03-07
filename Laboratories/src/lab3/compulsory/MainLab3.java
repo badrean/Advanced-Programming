@@ -5,7 +5,22 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Main class that is used as main access point of the application
+ *
+ * @see lab3.compulsory.Node
+ * @see Person
+ * @see Company
+ * @see java.lang.Comparable
+ * @author adrian
+ * @since 1.0
+ */
 public class MainLab3 {
+    /**
+     * Method that shows the implementations of the classes from the lab3.compulsory package
+     *
+     * @param args never used
+     */
     public static void main(String[] args) {
         List<Node> network = new ArrayList<Node>();
 

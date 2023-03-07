@@ -2,35 +2,62 @@ package lab3.compulsory;
 
 import org.jetbrains.annotations.NotNull;
 
-public class Company implements Comparable, Node{
+/**
+ * Company class that holds the name of the company
+ * <p>
+ *
+ * @see lab3.compulsory.Node
+ * @see java.lang.Comparable
+ * @author adrian
+ * @since 1.0
+ */
+
+public class Company implements Comparable, Node {
+    /**
+     * the name of the company
+     */
     String name;
 
-    Company(String name){
+    /**
+     * Constructs a Company object with the name given as param
+     *
+     * @param name name to be saved
+     */
+    Company(String name) {
         this.name = name;
     }
+
+    /**
+     * Method that compares 2 objects of the type Node.
+     *
+     * @param obj the object to be compared.
+     * @return <code>-1</code> in case this is smaller than param
+     * <code>0</code> in case they are equal
+     * <code>1</code> in case this is greater than param
+     */
     @Override
     public int compareTo(@NotNull Object obj) {
-        if(obj == this){
+        if (obj == this) {
             return 0;
         }
-        if(!(obj instanceof Node)){
+        if (!(obj instanceof Node)) {
             return -1;
         }
         Node auxiliary = (Node) obj;
         String auxiliaryName = auxiliary.getName();
         String thisName = this.getName();
         int indx = 0;
-        while(indx < thisName.length() && indx < auxiliaryName.length()){
-            if(thisName.charAt(indx) < auxiliaryName.charAt(indx)){
+        while (indx < thisName.length() && indx < auxiliaryName.length()) {
+            if (thisName.charAt(indx) < auxiliaryName.charAt(indx)) {
                 return -1;
             }
-            if(thisName.charAt(indx) > auxiliaryName.charAt(indx)){
+            if (thisName.charAt(indx) > auxiliaryName.charAt(indx)) {
                 return 1;
             }
-            if(indx >= thisName.length()){
+            if (indx >= thisName.length()) {
                 return -1; //the word compared has more letters than this, so it's greater than this
             }
-            if(indx >= auxiliaryName.length()){
+            if (indx >= auxiliaryName.length()) {
                 return 1; //this word has more letters than the compared word, so this is greater
             }
             indx++;
@@ -38,11 +65,21 @@ public class Company implements Comparable, Node{
         return 0;
     }
 
+    /**
+     * Method used to get the name of the Company
+     *
+     * @return the name of the company
+     */
     @Override
     public String getName() {
         return "Person: " + name;
     }
 
+    /**
+     * Method that returns a string of the current object
+     *
+     * @return a string representing the object
+     */
     @Override
     public String toString() {
         return "Company{" +
