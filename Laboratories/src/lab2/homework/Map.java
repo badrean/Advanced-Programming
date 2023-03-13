@@ -18,7 +18,7 @@ public class Map {
      */
     private Vector<Location> storedLocations;
     /**
-     * Vector that stores the current roads
+     * Vector that stores the current roadsh
      */
     private Vector<Road> storedRoads;
 

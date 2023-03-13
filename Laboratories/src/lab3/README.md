@@ -37,7 +37,10 @@ The main specifications of the application are:
 
 ## Done:
 
-* Nothing yet
+* Implemented new Node interface. The classes above implement it. The Programmer and Designer classes extend Person.
+* Made a CompareFriends class that implements Comparator, to compare the objects.
+* Created the network class to store the objects. 
+* Sorted the network alphabetically and then by the number of friends.
 
 ---
 
@@ -47,3 +50,7 @@ The main specifications of the application are:
   if they are removed, disconnect the network.
 * Identify the blocks of the network, that is subgraphs that are maximally 2-connected.
 * Create JUnit tests for your algorithms.
+
+## Done:
+
+* Nothing yet :(
