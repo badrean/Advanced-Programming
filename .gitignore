@@ -13,3 +13,5 @@
 *.class
 .idea
 out
+test
+resources

@@ -1,10 +1,6 @@
 package lab3.homework;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
 /**
  * Class used as main point of access for the application of Lab3.Homework
