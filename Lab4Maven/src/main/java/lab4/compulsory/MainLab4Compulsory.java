@@ -24,7 +24,6 @@ public class MainLab4Compulsory {
                 new Student("Andrei", projects.subList(0, 2)),
                 new Student("Tudor", projects.subList(0, 1))
         );
-
         System.out.println("List values:");
         System.out.println(students);
         System.out.println(projects + "\n");

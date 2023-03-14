@@ -11,6 +11,7 @@ import java.time.LocalDate;
 public class MainLab3Hw {
     /**
      * Main method to enter the application.
+     *
      * @param args Not used
      */
     public static void main(String[] args) {
