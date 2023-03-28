@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-class Catalog {
+public class Catalog {
 
     private List<Document> documents;
     public Catalog(){
@@ -24,25 +24,29 @@ class Catalog {
                 '}';
     }
 
-    public void add(Document document){
-        this.documents.add(document);
+    public List<Document> getDocuments() {
+        return documents;
     }
 
-    public void save(File file){
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, this.documents);
-        } catch (IOException exception){
-            exception.printStackTrace();
-        }
-    }
-
-     public void load(File file){
-         ObjectMapper objectMapper = new ObjectMapper();
-         try {
-             this.documents = objectMapper.readValue(file, new TypeReference<List<Document>>() {});
-         } catch (IOException exception) {
-             exception.printStackTrace();
-         }
-     }
+//    public void add(Document document){
+//        this.documents.add(document);
+//    }
+//
+//    public void save(File file){
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        try {
+//            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, this.documents);
+//        } catch (IOException exception){
+//            exception.printStackTrace();
+//        }
+//    }
+//
+//     public void load(File file){
+//         ObjectMapper objectMapper = new ObjectMapper();
+//         try {
+//             this.documents = objectMapper.readValue(file, new TypeReference<List<Document>>() {});
+//         } catch (IOException exception) {
+//             exception.printStackTrace();
+//         }
+//     }
 }

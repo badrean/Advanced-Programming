@@ -45,6 +45,14 @@ public class Document {
                 ", path='" + path + '\'' +
                 ", link='" + link + '\'' +
                 ", tags=" + tags +
-                '}'+ "\n";
+                '}';
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public String getLink() {
+        return link;
     }
 }
