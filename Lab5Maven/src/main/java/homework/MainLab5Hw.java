@@ -15,7 +15,7 @@ public class MainLab5Hw {
         catalog.getDocuments().add(new Document("Ip Sem 2", "/Users/adrian/Downloads/IP sem2.pdf", ""));
         catalog.getDocuments().add(new Document("Lab 5 page", "", "https://profs.info.uaic.ro/~acf/java/labs/lab_05.html"));
         catalog.getDocuments().add(new Document("Wikipedia Page", "", "https://en.wikipedia.org/wiki/Web_template_system"));
-//        addCommand.executeCommand(catalog);
+        addCommand.executeCommand(catalog);
 //        addCommand.executeCommand(catalog);
         Catalog anotherCatalog = new Catalog();
         saveCommand.executeCommand(catalog);

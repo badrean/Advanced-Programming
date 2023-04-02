@@ -48,11 +48,17 @@ public class DrawingPanel extends JPanel {
         g.setColor(Color.BLACK);
 
         g.drawOval(W/4,100,20,20);
+        g.fillOval(W/4,100,20,20);
         g.drawOval(W/4 - 100,H/2,20,20);
+        g.fillOval(W/4 - 100,H/2,20,20);
         g.drawOval(W/4,H - 100,20,20);
+        g.fillOval(W/4,H - 100,20,20);
         g.drawOval(W - W/4,100,20,20);
+        g.fillOval(W - W/4,100,20,20);
         g.drawOval(W - (W/4 - 100),H/2,20,20);
+        g.fillOval(W - (W/4 - 100),H/2,20,20);
         g.drawOval(W - W/4,H - 100,20,20);
+        g.fillOval(W - W/4,H - 100,20,20);
 
         g.drawLine(75,75,225,175);
     }
