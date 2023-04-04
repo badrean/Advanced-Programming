@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main7Comp {
     public static void main(String[] args) throws InterruptedException {
-        Matrix map = new Matrix(5);
+        Matrix map = new Matrix(4);
         for(int i = 0; i < map.getSize(); i++){
             for(int j = 0; j < map.getSize(); j++){
                 System.out.println(map.getMatrix()[i][j].getId());
@@ -17,6 +17,7 @@ public class Main7Comp {
         for(int i = 0; i < map.getSize() * map.getSize() * map.getSize(); i++){
             tokensList.add(i);
         }
+        System.out.println(tokensList);
         Collections.shuffle(tokensList);
         Queue<Integer> tokens = new LinkedList<>(tokensList);
 
