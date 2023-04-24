@@ -1,9 +1,5 @@
 package lab7.compulsory;
 
-import java.util.ArrayList;
-import java.util.EmptyStackException;
-import java.util.List;
-
 public class Matrix {
     private int size;
     private Cell[][] matrix;
