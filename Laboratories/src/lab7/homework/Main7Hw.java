@@ -8,7 +8,7 @@ import java.util.*;
 
 public class Main7Hw {
     public static void main(String[] args) throws InterruptedException {
-        Matrix map = new Matrix(5);
+        Matrix map = new Matrix(4);
         for(int i = 0; i < map.getSize(); i++){
             for(int j = 0; j < map.getSize(); j++){
                 System.out.println(map.getMatrix()[i][j].getId());

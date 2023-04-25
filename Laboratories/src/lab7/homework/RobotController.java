@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class RobotController {
     static private List<Robot> robotList;
+
+    private static boolean timerStarted = false;
     private static final long TIME_LIMIT = 30000; // in milliseconds
     final static private Runnable timeFunction = () -> {
         long startTime = System.currentTimeMillis();
@@ -108,7 +110,10 @@ public class RobotController {
             }
         }
 
-        timekeeper.start();
+        if (!timerStarted) {
+            timekeeper.start();
+            timerStarted = true;
+        }
     }
 
     public void pauseRobots(int value, int time) {
