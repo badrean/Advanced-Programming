@@ -21,7 +21,7 @@ public class Main {
         if(matchingPersons.isEmpty())
             artistsRepository.create(artist);
 
-        ArtistsJPA newArtist = artistsRepository.findById(1);
+        ArtistsJPA newArtist = artistsRepository.findById(501);
         System.out.println(newArtist);
 
 
