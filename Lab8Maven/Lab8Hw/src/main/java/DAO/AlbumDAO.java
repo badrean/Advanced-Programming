@@ -31,7 +31,6 @@ public class AlbumDAO{
             pstmt.setString(2, name);
             pstmt.setInt(3, releaseYear);
             pstmt.executeUpdate();
-//            System.out.println("Album " + this.id + " inserted in the database");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

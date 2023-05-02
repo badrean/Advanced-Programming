@@ -27,7 +27,6 @@ public class ArtistDAO {
             pstmt.setInt(1, id);
             pstmt.setString(2, name);
             pstmt.executeUpdate();
-//            System.out.println("Artist " + this.id + " inserted in the database");
         } catch (SQLException e) {
             System.out.println("SQLException message: " + e);
         }

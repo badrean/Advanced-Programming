@@ -19,7 +19,6 @@ public class GenreDAO{
             pstmt.setInt(1, id);
             pstmt.setString(2, name);
             pstmt.executeUpdate();
-//            System.out.println("Genre " + this.id + " inserted in the database");
         }
     }
 
