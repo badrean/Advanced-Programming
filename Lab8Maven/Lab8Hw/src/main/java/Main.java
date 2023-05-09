@@ -22,14 +22,14 @@ public class Main {
             ResultSet aristTable = dbm.getTables(null, null, "artists", null);
             ResultSet albumTable = dbm.getTables(null, null, "albums", null);
             ResultSet genreTable = dbm.getTables(null, null, "genres", null);
-            // check if the tables exist
-            if (aristTable.next() && albumTable.next() && genreTable.next()) {
+
+            if (aristTable.next() && albumTable.next() && genreTable.next()) { //if exists
                 Database.dropTables();
             }
             Database.createTables();
 
-            String line = br.readLine();
-            line = br.readLine(); // start from the second line
+            String line = br.readLine(); //skip first line (see csv format)
+            line = br.readLine();
             while (line != null) {
                 String[] attributes = line.split(",");
                 int id = Integer.parseInt(attributes[0]);
@@ -47,7 +47,7 @@ public class Main {
             System.out.println("Tables populated successfully!\n");
 
             Database.displayTables("artists");
-//
+
             System.out.println("The Beatles ID: " + artists.findByName("The Beatles"));
             System.out.println("Name: " + artists.findById(320));
             Database.getConnection().close();

@@ -18,8 +18,8 @@ public class Main {
 
         List<ArtistsJPA> matchingPersons = artistsRepository.findByName("Snoop Dog");
 
-        if(matchingPersons.isEmpty())
-            artistsRepository.create(artist);
+
+        artistsRepository.create(artist);
 
         ArtistsJPA newArtist = artistsRepository.findById(501);
         System.out.println(newArtist);
